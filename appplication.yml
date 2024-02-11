@@ -1,1 +1,15 @@
 
+server:
+  port: 8085
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dhruv37502005/MicroService-Configurations-ServerDetails
+          clone-on-start: true
+          default-label: admin
